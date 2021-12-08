@@ -14,10 +14,21 @@ class MainTimerAppState extends State<MainTimerApp> {
           body: Container(
             child: Center(
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
+                // mainAxisAlignment: MainAxisAlignment.center,
+                // crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
-                  Text('Add timer and other menu. here.'),
+                  Padding(padding: EdgeInsets.all(70)),
+                  Text(
+                    '준비 되셨나요?',
+                    style: TextStyle(
+                      color: Colors.white70,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Padding(padding: EdgeInsets.all(50)),
+                  Text('타이머 위젯 넣을자리'),
+                  Padding(padding: EdgeInsets.all(10)),
+                  ElevatedButton(onPressed: () {}, child: Text('시작'))
                 ],
               ),
             ),

@@ -38,6 +38,7 @@ class LoadingAppState extends State<LoadingApp> {
                       MaterialPageRoute(builder: (context) => MainTimerApp()));
                 },
                 child: Text('시작하기'),
+                style: ElevatedButton.styleFrom(primary: Colors.amber),
               ),
             ],
           ),
