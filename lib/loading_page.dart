@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'main_timer.dart';
 
-class LoadingApp extends StatelessWidget {
+class LoadingApp extends StatefulWidget {
+  @override
+  LoadingAppState createState() => LoadingAppState();
+}
+
+class LoadingAppState extends State<LoadingApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,7 +33,10 @@ class LoadingApp extends StatelessWidget {
                 padding: EdgeInsets.all(10),
               ),
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => MainTimerApp()));
+                },
                 child: Text('시작하기'),
               ),
             ],
