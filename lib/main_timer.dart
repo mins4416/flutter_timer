@@ -32,10 +32,9 @@ class MainTimerAppState extends State<MainTimerApp> {
                     onPressed: () {},
                     child: Text('시작'),
                     style: ElevatedButton.styleFrom(
-                        minimumSize: Size(250, 30),
-                        maximumSize: Size(250, 30),
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(18.0))),
+                      minimumSize: Size(250, 30),
+                      maximumSize: Size(250, 30),
+                    ),
                   )
                 ],
               ),

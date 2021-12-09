@@ -20,6 +20,7 @@ class LoadingAppState extends State<LoadingApp> {
             children: <Widget>[
               SvgPicture.asset('assets/images/undraw_studying_re_deca.svg',
                   width: 200, height: 200),
+              //png 파일은 왜 배경이 흰색이지?
               Padding(
                 padding: EdgeInsets.all(10),
               ),
