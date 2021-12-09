@@ -29,22 +29,21 @@ class SettingApp extends StatelessWidget {
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(30.0)),
           child: Container(
-            padding: EdgeInsets.only(right: 30, left: 30),
+            padding: EdgeInsets.only(right: 20, left: 20),
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.all(Radius.circular(40.0))),
             child: Center(
-              child: Column(
-                children: [
-                  Padding(padding: EdgeInsets.only(top: 15)),
-                  Divider(
-                    thickness: 1,
-                  ),
-                  Text('hi'),
-                  Text('hi'),
-                  Text('hi'),
-                  Text('hi'),
-                  Text('hi'),
-                ],
+              child: Container(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Padding(padding: EdgeInsets.only(top: 15)),
+                    ElevatedButton(onPressed: () {}, child: Text('Enable')),
+                    Column(
+                      children: [Text('State Change')],
+                    )
+                  ],
+                ),
               ),
             ),
           ),
