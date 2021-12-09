@@ -28,7 +28,15 @@ class MainTimerAppState extends State<MainTimerApp> {
                   Padding(padding: EdgeInsets.all(50)),
                   Text('타이머 위젯 넣을자리'),
                   Padding(padding: EdgeInsets.all(10)),
-                  ElevatedButton(onPressed: () {}, child: Text('시작'))
+                  ElevatedButton(
+                    onPressed: () {},
+                    child: Text('시작'),
+                    style: ElevatedButton.styleFrom(
+                        minimumSize: Size(250, 30),
+                        maximumSize: Size(250, 30),
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(18.0))),
+                  )
                 ],
               ),
             ),
