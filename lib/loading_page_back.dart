@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'main_timer.dart';
-import 'dart:async';
 
 class LoadingApp extends StatefulWidget {
   @override
@@ -9,18 +8,6 @@ class LoadingApp extends StatefulWidget {
 }
 
 class LoadingAppState extends State<LoadingApp> {
-  Timer? _timer;
-  LoadingAppState() {
-    _timer = Timer(Duration(milliseconds: 1000), () {
-      setState(() {
-        Image.asset('assets/images/loading_page_time.png',
-            width: 150, height: 150);
-      });
-      Navigator.push(
-          context, MaterialPageRoute(builder: (context) => MainTimerApp()));
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(

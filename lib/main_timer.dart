@@ -29,13 +29,16 @@ class MainTimerAppState extends State<MainTimerApp> {
                   Text('타이머 위젯 넣을자리'),
                   Padding(padding: EdgeInsets.all(10)),
                   ElevatedButton(
-                    onPressed: () {},
-                    child: Text('시작'),
+                    onPressed: () {
+                      // Navigator.push(context,
+                      //     MaterialPageRoute(builder: (context) => MainTimerApp()));
+                    },
+                    child: Text('시작하기'),
                     style: ElevatedButton.styleFrom(
-                      minimumSize: Size(250, 30),
-                      maximumSize: Size(250, 30),
-                    ),
-                  )
+                        primary: Colors.amber,
+                        minimumSize: Size(250, 30),
+                        maximumSize: Size(250, 30)),
+                  ),
                 ],
               ),
             ),
