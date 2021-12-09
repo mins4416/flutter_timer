@@ -16,6 +16,10 @@ class MainPageChoiceState extends State<MainPageChoiceApp> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color.fromRGBO(77, 150, 194, 1.0),
+      appBar: AppBar(
+        backgroundColor: Color.fromRGBO(77, 150, 194, 1.0),
+        elevation: 0, //remove shadow
+      ),
       body: Container(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
