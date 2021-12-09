@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'loading_page.dart';
 import 'intro_page.dart';
 import 'main_timer.dart';
+import 'main_page_choice.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,7 +16,8 @@ class MyApp extends StatelessWidget {
       //home: LoadingApp(),
       //앱 최초 설치 후 실행시 IntroPageApp 호출
       //Skip 또는 시작하기를 했을 경우 flag setting
-      home: IntroPageApp(),
+      //home: IntroPageApp(),
+      home: MainPageChoiceApp(),
     );
   }
 }
