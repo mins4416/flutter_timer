@@ -26,7 +26,7 @@ class TimeLineApp extends StatelessWidget {
         ),
         body: Container(
           child: Center(
-            child: Text('CENTER'),
+            child: Text('타임라인과 관련된 처리'),
           ),
         ));
   }

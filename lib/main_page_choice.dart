@@ -1,7 +1,7 @@
 import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'timeline_page.dart';
+import 'setting_page.dart';
 
 class MainPageChoiceApp extends StatefulWidget {
   @override
@@ -25,11 +25,10 @@ class MainPageChoiceState extends State<MainPageChoiceApp> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text("sadlkfjasldkfjlkasdjflkasdjlkfj"),
-              Text("sadlkfjasldkfjlkasdjflkasdjlkfj"),
-              Text("sadlkfjasldkfjlkasdjflkasdjlkfj"),
-              Text("sadlkfjasldkfjlkasdjflkasdjlkfj"),
-              Text("sadlkfjasldkfjlkasdjflkasdjlkfj"),
+              Text(
+                "sadlkfjasldkfjlkasdjflkasdjlkfj",
+                style: TextStyle(color: Colors.white),
+              ),
             ],
           ),
         ),
@@ -62,7 +61,10 @@ class MainPageChoiceState extends State<MainPageChoiceApp> {
                   )),
               Padding(padding: EdgeInsets.all(5)),
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => SettingApp()));
+                },
                 child: Row(
                   children: [
                     Padding(padding: EdgeInsets.only(left: 15)),
