@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'main_timer.dart';
 import 'dart:async';
 
@@ -9,9 +8,10 @@ class LoadingApp extends StatefulWidget {
 }
 
 class LoadingAppState extends State<LoadingApp> {
-  Timer? _timer;
+  //Timer? _timer;
   LoadingAppState() {
-    _timer = Timer(Duration(milliseconds: 1000), () {
+    //정해진 시간 이후에 다음 페이지로 이동함
+    Timer(Duration(milliseconds: 2000), () {
       setState(() {
         Image.asset('assets/images/loading_page_time.png',
             width: 150, height: 150);
@@ -46,17 +46,8 @@ class LoadingAppState extends State<LoadingApp> {
               Padding(
                 padding: EdgeInsets.all(10),
               ),
-              ElevatedButton(
-                onPressed: () {
-                  // Navigator.push(context,
-                  //     MaterialPageRoute(builder: (context) => MainTimerApp()));
-                },
-                child: Text('시작하기'),
-                style: ElevatedButton.styleFrom(
-                    primary: Colors.amber,
-                    minimumSize: Size(250, 30),
-                    maximumSize: Size(250, 30)),
-              ),
+              //Copyright © 2021 Salt and Berry Co.,Ltd.\nAll rights reserved.
+              //젤 밑에서 위로 어느 정도 띄우고 저작권 관련 문자열을 넣어야하는데
             ],
           ),
         ),
