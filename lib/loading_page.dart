@@ -48,8 +48,8 @@ class LoadingAppState extends State<LoadingApp> {
               ),
               ElevatedButton(
                 onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => MainTimerApp()));
+                  // Navigator.push(context,
+                  //     MaterialPageRoute(builder: (context) => MainTimerApp()));
                 },
                 child: Text('시작하기'),
                 style: ElevatedButton.styleFrom(

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:flutter_timer/main_timer.dart';
+import 'loading_page.dart';
 import 'package:introduction_screen/introduction_screen.dart';
 
 class IntroPageApp extends StatefulWidget {
@@ -104,7 +104,7 @@ class IntroPageState extends State<IntroPageApp> {
   void goMainTimerApp(context) {
     Navigator.of(context).pushAndRemoveUntil(
         MaterialPageRoute(builder: (context) {
-      return MainTimerApp();
+      return LoadingApp();
     }), (route) => false);
   }
 }
