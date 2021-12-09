@@ -1,4 +1,7 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
+import 'timeline_page.dart';
 
 class MainPageChoiceApp extends StatefulWidget {
   @override
@@ -13,25 +16,18 @@ class MainPageChoiceState extends State<MainPageChoiceApp> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color.fromRGBO(77, 150, 194, 1.0),
-      // appBar: AppBar(
-      //   title: Text('AppBar'),
-      // ),
-      // body: Container(
-      //   decoration: border_color,
-      //   padding: EdgeInsets.only(left: 10, top: 40, bottom: 10),
-      //   child: Row(
-      //     children: [
-      //       IconButton(
-      //         onPressed: () {},
-      //         icon: const Icon(
-      //           Icons.menu,
-      //           color: Colors.white,
-      //           size: 30.0,
-      //         ),
-      //       ),
-      //     ],
-      //   ),
-      // ),
+      body: Container(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text("sadlkfjasldkfjlkasdjflkasdjlkfj"),
+            Text("sadlkfjasldkfjlkasdjflkasdjlkfj"),
+            Text("sadlkfjasldkfjlkasdjflkasdjlkfj"),
+            Text("sadlkfjasldkfjlkasdjflkasdjlkfj"),
+            Text("sadlkfjasldkfjlkasdjflkasdjlkfj"),
+          ],
+        ),
+      ),
       drawer: Container(
         width: MediaQuery.of(context).size.width / 2.5,
         child: Drawer(
@@ -44,7 +40,10 @@ class MainPageChoiceState extends State<MainPageChoiceApp> {
                 top: 50,
               )),
               InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => TimeLineApp()));
+                  },
                   child: Row(
                     children: [
                       Padding(padding: EdgeInsets.only(left: 15)),
@@ -77,5 +76,24 @@ class MainPageChoiceState extends State<MainPageChoiceApp> {
         ),
       ),
     );
+    // appBar: AppBar(
+    //   title: Text('AppBar'),
+    // ),
+    // body: Container(
+    //   decoration: border_color,
+    //   padding: EdgeInsets.only(left: 10, top: 40, bottom: 10),
+    //   child: Row(
+    //     children: [
+    //       IconButton(
+    //         onPressed: () {},
+    //         icon: const Icon(
+    //           Icons.menu,
+    //           color: Colors.white,
+    //           size: 30.0,
+    //         ),
+    //       ),
+    //     ],
+    //   ),
+    // ),
   }
 }
